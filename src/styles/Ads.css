@@ -1,0 +1,92 @@
+/* Professional Ads Page Styling */
+
+.ads-container {
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.ads-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.ads-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.ad-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ad-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.ad-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ad-content {
+  padding: 16px;
+}
+
+.ad-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.ad-description {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* .count_remaining{
+  align-self: center;
+  margin-top: 10px;
+} */
+/* Mobile-first adjustments */
+@media (max-width: 480px) {
+  .ads-container {
+    padding: 12px;
+  }
+
+  .ad-content {
+    padding: 12px;
+  }
+
+  .ad-title {
+    font-size: 1.1rem;
+  }
+
+  .ad-description {
+    font-size: 0.9rem;
+  }
+}

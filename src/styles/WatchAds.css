@@ -1,0 +1,36 @@
+.video-ad-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-frame {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.status-section {
+  margin-top: 20px;
+}
+
+.timer-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.reward-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reward-btn:hover {
+  background-color: #218838;
+}

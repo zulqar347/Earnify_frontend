@@ -1,0 +1,99 @@
+/* Landing Page Styling */
+
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.landing-content {
+  text-align: center;
+  background: #ffffff;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  max-width: 500px;
+  width: 100%;
+}
+
+.landing-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.landing-tagline {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+.landing-info {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.landing-info p {
+  margin-bottom: 12px;
+}
+
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.signup-btn {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.signup-btn:hover {
+  background-color: #059669;
+}
+
+.login-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .landing-content {
+    padding: 24px 16px;
+  }
+
+  .landing-title {
+    font-size: 1.6rem;
+  }
+
+  .landing-tagline {
+    font-size: 1rem;
+  }
+
+  .btn {
+    flex: 1;
+    text-align: center;
+  }
+}

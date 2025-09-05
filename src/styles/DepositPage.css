@@ -1,0 +1,100 @@
+/* Deposit Page Styling */
+
+.deposit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 16px;
+}
+
+.deposit-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.deposit-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.deposit-subtitle {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.deposit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.deposit-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.deposit-form input,
+.deposit-form select {
+  padding: 12px 14px;
+  margin-top: 4px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.deposit-btn {
+  background-color: #10b981;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.deposit-btn:hover {
+  background-color: #059669;
+}
+
+.deposit-success {
+  font-size: 1rem;
+  color: #16a34a;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* Mobile-first adjustments */
+@media (max-width: 480px) {
+  .deposit-card {
+    padding: 24px 16px;
+  }
+  .deposit-title {
+    font-size: 1.5rem;
+  }
+  .deposit-subtitle {
+    font-size: 0.95rem;
+  }
+  .deposit-form input,
+  .deposit-form select {
+    font-size: 0.95rem;
+  }
+  .deposit-btn {
+    width: 100%;
+  }
+}
