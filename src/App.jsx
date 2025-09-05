@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 import "./styles/App.css"
 import BottomNav from "./components/BottomNav"
 import ProfilePage from "./pages/Profile"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import ReferralPage from "./pages/ReferralPage"
 import AdsPage from "./pages/Ads"
 import VideoAd from "./pages/WatchAds"
