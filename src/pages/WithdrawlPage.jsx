@@ -7,6 +7,7 @@ const WithdrawalPage = () => {
   const [submitted, setSubmitted] = useState(false);
   const [balance, setBalance] = React.useState('')
 
+
   React.useEffect(()=>{
     api.get('users/profile/')
     .then(res => setBalance(res.data[0].balance))
@@ -18,13 +19,13 @@ const WithdrawalPage = () => {
     const account_no = formData.get('accountNumber')
     const method = formData.get("bankName")
     const amount = formData.get('amount')
-    if (amount >= balance){
+    if (Number(amount) <= Number(balance)){
       api.post('withdraw/', {account_name, account_no, method, amount})
       .then(res => {
         console.log(res.data)
         setSubmitted(true);
       }).catch(err => console.error(err))
-    }else(alert(`Error! Your Balance is ${balance}`))
+    }else(alert("Account Balance Should be At Least 360!"))
   };
 
   return (

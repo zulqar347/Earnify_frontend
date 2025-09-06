@@ -10,8 +10,7 @@ function ProfilePage() {
     .then((res)=> setData(res.data[0]))
     .catch((error) => console.error(error));
   },[])
-  console.log(data)
-
+  
    const handleCopy = () => {
     const text = document.querySelector(".referral-code")?.innerText;
     if (text) {

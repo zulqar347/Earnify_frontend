@@ -16,7 +16,7 @@ const SidebarNavbar = () => {
       <aside className="sidebar">
         <h2 className="logo">Earnify</h2>
         <ul>
-          <li><Link to="/home">Dashboard</Link></li>
+          {/* <li><Link to="/home">Dashboard</Link></li> */}
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/ads">Ads</Link></li>
           <li><Link to="/referral">Referral</Link></li>
@@ -35,8 +35,8 @@ const SidebarNavbar = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <ul className="mobile-menu">
-          <li><Link to="/home">Dashboard</Link></li>
-          <li><Link to="/earnings">Earnings</Link></li>
+          {/* <li><Link to="/home">Dashboard</Link></li> */}
+          <li><Link to="/home">Home</Link></li>
           <li><Link to="/ads">Ads</Link></li>
           <li><Link to="/referral">Referral</Link></li>
           <li><Link to="/deposit">Deposit</Link></li>
