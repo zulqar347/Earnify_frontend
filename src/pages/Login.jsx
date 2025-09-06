@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
 import api from "../api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const navigate = useNavigate()
@@ -42,7 +42,7 @@ const LoginForm = () => {
         <button type="submit" className="login-btn">Log In</button>
 
         <p className="signup-text">
-          Don’t have an account? <a href="/signup">Sign up</a>
+          Don’t have an account? <Link to="/signup">Sign up</Link>
         </p>
       </form>
     </div>

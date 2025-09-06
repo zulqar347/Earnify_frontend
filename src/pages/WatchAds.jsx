@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/WatchAds.css"; // import css file
 import { useNavigate } from "react-router-dom"
 import api from "../api";
+import { Link } from "react-router-dom";
 
 export default function VideoAd(props) {
   const navigate = useNavigate()

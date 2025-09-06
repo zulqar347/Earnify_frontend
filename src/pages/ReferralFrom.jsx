@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/ReferralForm.css";
+import { Link } from "react-router-dom";
 
 function ReferralSignup() {
   const location = useLocation();
@@ -55,7 +56,7 @@ function ReferralSignup() {
         </form>
 
         <p className="signup-footer">
-          Already have an account? <a href="/login">Login here</a>
+          Already have an account? <Link to="/login">Login here</Link>
         </p>
       </div>
     </div>

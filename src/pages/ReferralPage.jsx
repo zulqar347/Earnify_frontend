@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/ReferralPage.css";
 import React from "react";
 import api from "../api";
+import { Link } from "react-router-dom";
 
 const ReferralPage = ({ referralCode }) => {
   const [copied, setCopied] = useState(false);
@@ -55,30 +56,30 @@ const ReferralPage = ({ referralCode }) => {
 
         {showShareOptions && (
           <div className="share-options">
-            <a
-              href={shareUrls.facebook}
+            <Link
+              to={shareUrls.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="share-btn facebook"
             >
               F
-            </a>
-            <a
-              href={shareUrls.twitter}
+            </Link>
+            <Link
+              to={shareUrls.twitter}
               target="_blank"
               rel="noopener noreferrer"
               className="share-btn twitter"
             >
               T
-            </a>
-            <a
-              href={shareUrls.whatsapp}
+            </Link>
+            <Link
+              to={shareUrls.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="share-btn whatsapp"
             >
               W
-            </a>
+            </Link>
           </div>
         )}
 

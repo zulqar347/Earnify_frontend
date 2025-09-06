@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/DepositPage.css";
 import api from "../api";
+import { Link } from "react-router-dom";
 
 
 const DepositPage = () => {
@@ -33,7 +34,7 @@ const DepositPage = () => {
           <div><p className="deposit-success">
             ✅ Your deposit request has been submitted successfully!
           </p>
-          <a href="/home"><button className="deposit-btn">Go TO Home</button></a></div> 
+          <Link to="/home"><button className="deposit-btn">Go TO Home</button></Link></div> 
         ) : (
           <form className="deposit-form" action={handleSubmit}>
             <label>

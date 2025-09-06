@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Dashboard.css";
+import { Link } from "react-router-dom";
 
 function EarningsCard({ title, amount }) {
   return (

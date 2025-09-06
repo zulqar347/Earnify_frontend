@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Profile.css";
 import api from "../api";
+import { Link } from "react-router-dom";
 
 function ProfilePage() {
   const [data, setData] = React.useState('')

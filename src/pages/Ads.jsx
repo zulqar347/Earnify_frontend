@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Ads.css";
 import api from '../api'
 import VideoAd from "./WatchAds";
+import { Link } from "react-router-dom";
 
 const demoAds = [
   {
@@ -43,9 +44,9 @@ const AdsPage = () => {
       
       <div className="ads-grid">
         {demoAds.map((ad) => (
-          <a
+          <Link
             key={ad.id}
-            href='/watch-ad'
+            to='/watch-ad'
             target="_blank"
             rel="noopener noreferrer"
             className="ad-card"
@@ -55,7 +56,7 @@ const AdsPage = () => {
               <h3 className="ad-title">{ad.title}</h3>
               <p className="ad-description">{ad.description}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
       

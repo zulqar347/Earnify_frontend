@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/InfoPage.css";
 import api from "../api";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const InfoPage = () => {
     const navigate = useNavigate()
