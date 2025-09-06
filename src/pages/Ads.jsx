@@ -44,19 +44,23 @@ const AdsPage = () => {
       
       <div className="ads-grid">
         {demoAds.map((ad) => (
-          <Link
+          <Link to='/watch-ad'>
+             <a
             key={ad.id}
-            to='/watch-ad'
+            
             target="_blank"
             rel="noopener noreferrer"
             className="ad-card"
           >
+            
             <img src={ad.image} alt={ad.title} className="ad-image" />
             <div className="ad-content">
               <h3 className="ad-title">{ad.title}</h3>
               <p className="ad-description">{ad.description}</p>
             </div>
+          </a>
           </Link>
+         
         ))}
       </div>
       
