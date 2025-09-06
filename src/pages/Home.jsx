@@ -24,7 +24,7 @@ export default function Home() {
   
   React.useEffect(()=>{
     api.get('users/profile/')
-    .then((res)=> setData(res.data[0]))
+    .then((res)=> console.log(res.data[0]))
     .catch((error) => console.error(error));
   },[])
 
