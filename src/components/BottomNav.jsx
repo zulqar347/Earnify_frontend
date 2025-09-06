@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/BottomNav.css";
+import { Link } from "react-router-dom";
 
 function BottomNav() {
   return (
