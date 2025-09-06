@@ -13,11 +13,15 @@ const LoginForm = () => {
     const password = formData.get('password')
     api.post('token/', {username, password})
     .then(res => {
+      // console.log()
       localStorage.setItem('access_token', res.data.access),
       localStorage.setItem('refresh_token', res.data.refresh)
       navigate("/home")
     })
-    .catch(err=> console.error(err))
+    .catch(err=>{
+      console.error(err),
+      alert("Credentials Not Correct!")
+    } )
   }
 
   return (
