@@ -14,11 +14,11 @@ const SidebarNavbar = () => {
       <aside className="sidebar">
         <h2 className="logo">Earnify</h2>
         <ul>
-          <li><a href="/home">Dashboard</a></li>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/ads">Ads</a></li>
-          <li><a href="/referral">Referral</a></li>
-          <li><a href="/deposit">Deposit</a></li>
+          <li><Link to="/home">Dashboard</Link></li>
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/ads">Ads</Link></li>
+          <li><Link to="/referral">Referral</Link></li>
+          <li><Link to="/deposit">Deposit</Link></li>
         </ul>
       </aside>
 
@@ -33,11 +33,11 @@ const SidebarNavbar = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <ul className="mobile-menu">
-          <li><a href="/home">Dashboard</a></li>
-          <li><a href="/earnings">Earnings</a></li>
-          <li><a href="/ads">Ads</a></li>
-          <li><a href="/referral">Referral</a></li>
-          <li><a href="/deposit">Deposit</a></li>
+          <li><Link to="/home">Dashboard</Link></li>
+          <li><Link to="/earnings">Earnings</Link></li>
+          <li><Link to="/ads">Ads</Link></li>
+          <li><Link to="/referral">Referral</Link></li>
+          <li><Link to="/deposit">Deposit</Link></li>
         </ul>
       )}
     </div>

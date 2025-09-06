@@ -4,10 +4,10 @@ import "../styles/BottomNav.css";
 function BottomNav() {
   return (
     <nav className="bottom-nav">
-      <a href="/home" className="nav-item">💰 Dashboard</a>
-      <a href="/home" className="nav-item">🏠 Home</a>
-      <a href="/ads" className="nav-item">📺 Ads</a>
-      <a href="/referral" className="nav-item">👥 Referral</a>
+      <Link to="/home" className="nav-item">💰 Dashboard</Link>
+      <Link to="/home" className="nav-item">🏠 Home</Link>
+      <Link to="/ads" className="nav-item">📺 Ads</Link>
+      <Link to="/referral" className="nav-item">👥 Referral</Link>
     </nav>
   );
 }

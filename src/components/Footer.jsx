@@ -10,11 +10,11 @@ export default function Footer() {
       </div>
 
       <div className="footer-links">
-        <a href="/">Home</a>
-        <a href="/dashboard">Earnings</a>
-        <a href="/ads">Ads</a>
-        <a href="/referral">Referral</a>
-        <a href="/profile">Profile</a>
+        <Link to="/">Home</Link>
+        <Link to="/dashboard">Earnings</Link>
+        <Link to="/ads">Ads</Link>
+        <Link to="/referral">Referral</Link>
+        <Link to="/profile">Profile</Link>
       </div>
 
       <div className="footer-bottom">
