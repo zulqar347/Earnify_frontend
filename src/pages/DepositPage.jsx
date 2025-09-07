@@ -26,9 +26,11 @@ const DepositPage = () => {
       <div className="deposit-card">
         <h2 className="deposit-title">Confirm Your Deposit</h2>
         <p className="deposit-subtitle">
-          Enter your payment details and transaction ID after making a deposit of Rs 360.
+          Enter your payment details and transaction ID after making a deposit.
           Our team will verify and add the balance to your account.
         </p>
+        <p>Make Deposit Against These Credentials</p>
+        <p><strong>Account No : 0330 4177184</strong><br/><strong>Amount: 360</strong></p>
 
         {submitted ? (
           <div><p className="deposit-success">
