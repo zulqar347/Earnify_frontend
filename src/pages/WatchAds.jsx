@@ -29,15 +29,16 @@ export default function VideoAd(props) {
   return (
     <div className="video-ad-container" onClick={()=> navigate("/ads")}>
       <iframe
-        width="560"
-        height="315"
-        src="https://youtube.com/embed/6w_fbVcBG0M"
+        // width="560"
+        // height="315"
+        // src="https://youtube.com/embed/6w_fbVcBG0M"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         className="video-frame"
       />
+       <div id="container-df3cb164dcd32c13dceaaa75535110ce"></div>
       <div className="status-section">
         {completed ? (
           <button className="reward-btn" onClick={addBalance} >Claim Reward</button>
