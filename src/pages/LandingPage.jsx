@@ -1,10 +1,12 @@
 import React from "react";
 import "../styles/LandingPage.css";
 import { Link } from "react-router-dom"
+import InstallButton from "../components/InstallButton";
 
 const LandingPage = () => {
   return (
     <div className="landing-container">
+      <InstallButton/>
       <div className="landing-content">
         <h1 className="landing-title">Welcome to Earnify</h1>
         <p className="landing-tagline">

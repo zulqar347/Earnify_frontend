@@ -16,11 +16,13 @@ import LandingPage from "./pages/LandingPage"
 import DepositPage from "./pages/DepositPage"
 import ReferralForm from "./pages/ReferralFrom"
 import InfoPage from "./pages/InfoPage"
+import InstallButton from "./components/InstallButton"
 
 function App() {
   return(
     <Router>
       <Routes>
+        {/* <Route path="/install" element={<InstallButton/>}/> */}
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/deposit" element={<DepositPage/>}/>
         <Route path="/home" element={<div><SidebarNavbar/><Home/><BottomNav/></div>}/>
