@@ -46,12 +46,12 @@ const ReferralPage = ({ referralCode }) => {
           <button className="btn-copy" onClick={handleCopy}>
             {copied ? "Copied!" : "Copy"}
           </button>
-          <button
+          {/*<button
             className="btn-share"
             onClick={() => setShowShareOptions(!showShareOptions)}
           >
             Share
-          </button>
+          </button>*/}
         </div>
 
         {showShareOptions && (
